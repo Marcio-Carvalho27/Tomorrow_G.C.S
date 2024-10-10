@@ -1,0 +1,15 @@
+Item de Configuração: artefatos a serem gerenciados
+Baseline: Versão revisada e aprovada
+Auditoria de Configuração: Garantir que o codigo esteja documentado
+
+Controle de Mudança: Qualquer mudança feita deve ser revisada, avaliada e Autorizada
+
+Issue Tracking: sistema para gerenciar issue (tarefas)
+
+Milestones: conjunto de issues que definem um objetivo do projeto
+
+Workdlows: 
+
+    => fluxo Centralizado: repositorio central, clonado por todos
+
+    => Fluxo com Feature Branches: Repositorio central, onde cada tarefa e desenvolvida em uma branch
