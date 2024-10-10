@@ -1,0 +1,84 @@
+### SLIDE 1 ###
+
+SCM (Software Configuration Management) -> gerenciar alterações
+
+|Software : conjuntos de instruções para serem executadas
+
+SCM - Identificar, controlar mudanças, controlar versão, Auditorar Configurações
+
+surge nos anos 50, para organizar aeronaves militares
+
+Item de Configuração: artefatos a serem gerenciados
+Baseline: Versão revisada e aprovada
+Auditoria de Configuração: Garantir que o codigo esteja documentado
+
+Controle de Mudança: Qualquer mudança feita deve ser revisada, avaliada e Autorizada
+
+Issue Tracking: sistema para gerenciar issue (tarefas)
+
+Milestones: conjunto de issues que definem um objetivo do projeto
+
+### Slide 2 ###
+
+Versionamento
+
+distribuidos => git, mercurial
+subversions => centralizado
+
+git => sistema de controle de versão
+
+install => https://git-scm.com/downloads
+
+serviços de hospedagem => GitHub, GitLab...
+
+GitHub => Plataforma de hospedagem de codigo fonte, login do github no vscode
+
+diretorio de trabalho -> add -> intermediario -> commit -> repo. Local -> push -> repo Virtual
+
+Configurando o git
+
+Criando um Repositorio Local no git, a partir de uma pasta existente (git init)
+
+Criar um repositorio no Github
+
+Adicionar arquivos com o git add
+
+removendo arquivos com o git rm --cached
+
+criando um commit atraves do git commit -m "text"
+
+Conectando Repositorios, juntando o Git e o GitHub 
+
+Atualizando o repositorio git pull e push
+
+clone pode ser usado para pegar um repositorio existente desde de que tenha autorização
+
+Desfazendo mudanças <comandos no arquivo de comandos>
+
+Branchs => são ramificações dos codigos, o git checkout é usado para navefar entre versões
+
+Merge => Junta as mudanças entre duas branchs, é feito um commit juntando as duas branchs
+
+caso a branch mergeada for descendente da atual, acontece o fast foward, não é criada um novo commit. (tem como criar um commit mesmo assim com git merge --no-ff <branch>)
+
+Rebase => junta mudanças reescrevendo o historico linear, replica os commits de uma branch sobre os de outra
+
+Conflito => quando é tentado dar merge de um mesmo arquivo que esta diferente nas duas branchs, tera um Conflito
+
+Resolvendo Conflito => pode cancelar o merge, escolher uma das versões e altera o arquivo para ser uma mistura
+
+Pull Requeste => é uma requisição para que haja o merge
+
+Boas praticas para commits
+=> maximo de 50 caracteres, começa com letra maiuscula, sem ponto no final, assunto claro e com um vermo na 3ª pessoa no inicio
+=> uma mudança por commit
+
+Workdlows: 
+
+    => fluxo Centralizado: repositorio central, clonado por todos
+
+    => Fluxo com Feature Branches: Repositorio central, onde cada tarefa e desenvolvida em uma branch
+
+    => Fluco com Bifurcação: dado um repositorio central, é feita uma fork e dela um copia, as alterações são feitas na copia e dada merge na fork
+
+    
