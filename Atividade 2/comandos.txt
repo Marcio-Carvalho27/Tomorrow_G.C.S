@@ -1,0 +1,107 @@
+git init
+Inicializa um novo repositório Git em um diretório existente.
+
+git clone <url>
+Faz uma cópia de um repositório remoto em um diretório local.
+
+git status
+Exibe o estado dos arquivos no repositório (modificados, preparados para commit, etc.).
+
+git add <arquivo>
+Adiciona arquivos ou mudanças ao índice (stage), preparando-os para o commit.
+
+git rm --cached <arquivo>
+Remove arquivos do índice sem excluí-los do diretório de trabalho.
+
+git commit -m "mensagem"
+Cria um commit com as alterações no índice e inclui uma mensagem descritiva.
+
+git commit --amend
+Modifica o último commit, incluindo novas alterações no índice ou alterando a mensagem.
+
+git branch
+Lista todas as ramificações (branches) no repositório, mostrando qual está ativa.
+
+git branch <nome-da-branch>
+Cria uma nova branch com o nome especificado.
+
+git checkout <branch>
+Alterna para a branch especificada ou restaura arquivos para um estado anterior.
+
+git checkout -b <nome-da-branch>
+Cria uma nova branch e alterna para ela imediatamente.
+
+git merge <branch>
+Faz um merge das alterações de uma branch com outra.
+
+git merge --no-ff <branch>
+Faz um merge sem fast-forward, forçando a criação de um commit de merge.
+
+git rebase <branch>
+Aplica os commits de uma branch sobre outra, reescrevendo o histórico para torná-lo linear.
+
+git stash
+Salva temporariamente as mudanças locais que não estão prontas para commit, permitindo alternar de branch sem perder o progresso.
+
+git stash pop
+Restaura as mudanças salvas pelo git stash e as remove da lista de stash.
+
+git pull
+Atualiza o repositório local com as alterações do repositório remoto e faz um merge automaticamente.
+
+git push
+Envia os commits do repositório local para o repositório remoto.
+
+git push origin <branch>
+Envia uma branch específica para o repositório remoto.
+
+git fetch
+Baixa as alterações do repositório remoto, mas não as mescla no repositório local.
+
+git log
+Exibe o histórico de commits do repositório.
+
+git diff
+Mostra as diferenças entre arquivos no diretório de trabalho e no índice.
+
+git reset <arquivo>
+Remove arquivos do índice, mas mantém as mudanças no diretório de trabalho.
+
+git reset --hard <commit>
+Reseta o repositório para um estado anterior, descartando todas as mudanças e commits após o commit especificado.
+
+git tag <nome-da-tag>
+Cria uma tag para marcar um ponto específico na linha do tempo do repositório, geralmente usado para marcar versões.
+
+git remote add origin <url>
+Associa o repositório local a um repositório remoto.
+
+git remote -v
+Lista os repositórios remotos associados ao repositório local.
+
+git push --tags
+Envia todas as tags locais para o repositório remoto.
+
+git pull origin <branch>
+Baixa e faz merge das alterações de uma branch específica do repositório remoto.
+
+git revert <commit>
+Cria um novo commit que desfaz as mudanças introduzidas por um commit anterior, preservando o histórico.
+
+git blame <arquivo>
+Mostra quem fez alterações em cada linha de um arquivo, útil para rastrear a origem de mudanças.
+
+git show <commit>
+Exibe detalhes de um commit específico.
+
+git cherry-pick <commit>
+Aplica um commit específico de outra branch ao histórico atual.
+
+git bisect
+Usa a busca binária para encontrar o commit que introduziu um bug, testando diferentes pontos na linha do tempo.
+
+git clean -f
+Remove arquivos não rastreados do diretório de trabalho.
+
+git reflog
+Mostra o histórico de referências para o repositório, útil para recuperar commits perdidos.
